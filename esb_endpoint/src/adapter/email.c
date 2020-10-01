@@ -31,7 +31,8 @@ const char * payload_file_path[] = {
     "Check RFC5322.\r\n",
     NULL
 };
-
+ 
+/*
 static size_t payload_source(void * ptr, size_t size, size_t nmemb, void * userp) {
     struct upload_status * upload_ctx = (struct upload_status * ) userp;
     const char * data;
@@ -52,7 +53,7 @@ static size_t payload_source(void * ptr, size_t size, size_t nmemb, void * userp
 
     return 0;
 }
-
+*/
 int send_mail(char * to, char * file_path) {
     printf("Sending mail to %s\n", to);
 
